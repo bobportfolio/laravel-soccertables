@@ -1,0 +1,132 @@
+/*!
+ * Drag and Drop css
+ * Copyright 2014 Robert Smith
+ */
+
+.circle-300px {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	background-color:#7fbfff;
+	z-index:-1;
+}
+
+.circle-200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	background-color: lightgray;
+	z-index:-1;
+}
+
+.pavilion-200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(/images/pavilion.jpg) no-repeat;
+	background-size: 200px;
+	z-index:1;
+}
+
+.pavilion-300px {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	background: url(/images/pavilion.jpg) no-repeat;
+	background-size: 300px;
+	z-index:1;
+}
+
+.bigben-200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(/images/bigben.jpg) no-repeat;
+	background-size: 200px;
+	z-index:1;
+}
+
+.bigben-300px {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	background: url(/images/bigben.jpg) no-repeat;
+	background-size: 300px;
+	z-index:1;
+}
+
+.eiffel-200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(/images/eiffel.jpg) no-repeat;
+	background-size: 200px;
+	z-index:1;
+}
+
+.eiffel-300px {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	background: url(/images/eiffel.jpg) no-repeat;
+	background-size: 300px;
+	z-index:1;
+}
+
+#pavilion, #drop1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+	
+#bigben, #drop2 {
+    position: absolute;
+    top: 240px;
+    left: 0;
+}
+	
+#eiffel, #drop3 {
+    position: absolute;
+    top: 460px;
+    left: 0;
+}
+
+#dropbig {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#buildingname {
+	background-color: #7fbfff;
+	position: absolute;
+	top: 420px;
+	left: 0px;
+	width: 300px;
+	text-align: center;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 1080px) {
+	#back-button {
+		position: absolute;
+		top: 600px;
+	}
+	
+	#skills {
+		position: absolute;
+		top: 60px;
+		color: blue;
+	}
+}
+
+@media (min-width: 1080px) {
+	#back-button {
+		margin-top: 20px;
+	}
+	#skills {
+		margin-top: 20px;
+	}
+}

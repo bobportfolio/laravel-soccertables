@@ -1,0 +1,108 @@
+/*!
+ * Bootstrap customised theme
+ * Copyright 2014 Robert Smith
+ */
+.navbar-custom {
+    background-color:#229922;
+    color:#ffffff;
+    border-radius:1;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-i > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+div.navbar div.navbar-inner ul.nav a:hover {
+	background-color: lightgreen;
+    color: black; 
+}
+
+.colr {
+	text-align: right;
+}
+
+.nav-custom a {
+	color: navy;
+}
+
+
+
+.table-no-border>thead>tr>th, 
+.table-no-border>tbody>tr>th, 
+.table-no-border>tfoot>tr>th, 
+.table-no-border>thead>tr>td, 
+.table-no-border>tbody>tr>td, 
+.table-no-border>tfoot>tr>td {
+  border-top: none; 
+}
+
+.td-border-left {
+  border-left: solid lightgray 2px;
+}
+
+.td-border-right {
+  border-right: solid lightgray 2px;
+}
+
+.td-border-bottom {
+  border-right: solid lightgray 2px;
+}
+
+.td-border-top {
+  border-top: dotted black 1px;
+}
+
+.thead-league-table>tr>th {
+  text-align: right;
+  width: 32px;
+}
+
+.tfoot-border {
+  border-top: lightgray solid 2px;
+}
+
+#portfolio-url {
+	background-color: white;
+	border: 2px solid #a1a1a1;
+	padding: 10px 40px; 
+	width: 300px;
+	height: 300px;
+	border-radius:25px;
+	box-shadow: 10px 10px 5px #888888;
+	background-clip: padding-box;
+}
+
+#portfolio-url:hover {
+	border: 2px solid navy;
+	color: navy;
+}
+
+.tooltip{
+    font-size:14px;
+}
+
+.tooltip > .tooltip-inner {
+	background-color: white;
+	color: black;
+}
+
+#robbieportfolio {
+	background-color: #7fbfff;
+}
+
+.pavilion-200px {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: url(/images/pavilion.jpg) no-repeat;
+	background-size: 200px;
+}
