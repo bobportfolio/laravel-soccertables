@@ -40,5 +40,5 @@ Route::get('draganddrop', function()
 });
 
 //Contact Page
-Route::get('contact', 'App\Http\Controllers\ContactController@getContact');
-Route::post('contact_request','App\Http\Controllers\ContactController@getContactUsForm');
+// Route::get('contact', 'App\Http\Controllers\ContactController@getContact');
+// Route::post('contact_request','App\Http\Controllers\ContactController@getContactUsForm');
