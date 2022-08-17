@@ -14,17 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {return view('home');});
-
-Route::get('/soccertables', 'App\Http\Controllers\LeagueController@home');
+Route::get('/', 'App\Http\Controllers\LeagueController@home');
 Route::get('matches/{league}','App\Http\Controllers\LeagueController@showLatest');
 Route::get('matches/{league}/{date}', 'App\Http\Controllers\LeagueController@showDate');
-
-
-Route::get('soccertables/about', function() 
-{
-	return View::make('soccertables/about');
-});
 
 Route::post('leaguetable/{league}/{date}', 'App\Http\Controllers\LeagueController@showLeagueTable');
 Route::post('formtable/{league}/{date}', 'App\Http\Controllers\LeagueController@showFormTable');

@@ -18,7 +18,7 @@
 
 @section('left-sidebar')
     <div>
-        <a href="{{URL::to('/soccertables')}}">
+        <a href="{{URL::to('/')}}">
             <div>
                 <h1>
                 <img src="{{URL::to('/images/soccerball.png')}}" alt="Soccer Tables" 

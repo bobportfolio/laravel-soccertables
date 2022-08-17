@@ -146,6 +146,11 @@ class LeagueController extends Controller
         $table_sort_fk = $leagueseason->table_sort_fk;
         if($leagueseason->num_phases > 1)
         {
+            if($matchdate<$leagueseason->start_date) 
+                $matchdate=$leagueseason->start_date;
+            else if($matchdate>$leagueseason->end_date)
+                $matchdate=$leagueseason->end_date;
+
             $phases = LeaguePhases::onDate($league,$matchdate);
             if(isset($phases))
             {
