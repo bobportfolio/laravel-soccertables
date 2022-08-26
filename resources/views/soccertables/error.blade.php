@@ -1,9 +1,22 @@
-@extends('soccertables.layouts.default')
+</head>
+<head>
+@include('soccertables.includes.head')
+</head>
+<body>
+<div class="container-fluid">
+	
+    @include('soccertables.includes.navbar')
+    <div><br><br></div>
 
-@section('title')
-@parent- Error
-@stop
-
-@section('content')
-	<h2>Navigation Error</h2>
-@stop
+    <h1>Sorry page not found</h1>
+</div>
+@include('soccertables.includes.scripts')
+<script>
+$(window).load(function() {
+    window.setTimeout(function(){
+        window.location.href = "http://laravel.bobportfolio.uk";
+    }, 2000);
+});
+</script>
+</body>
+</html>

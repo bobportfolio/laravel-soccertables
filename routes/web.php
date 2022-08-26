@@ -39,6 +39,6 @@ Route::get('draganddrop', function()
 	return View::make('draganddrop/home');
 });
 
-//Contact Page
-// Route::get('contact', 'App\Http\Controllers\ContactController@getContact');
-// Route::post('contact_request','App\Http\Controllers\ContactController@getContactUsForm');
+Route::fallback(function () {
+    return View::make('soccertables/error');
+});

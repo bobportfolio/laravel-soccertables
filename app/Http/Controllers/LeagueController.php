@@ -85,10 +85,13 @@ class LeagueController extends Controller
 
     private function getApacheVersion()
     {
-        $words = explode('/', apache_get_version(), 2);
-        if(isset($words))
-            $version = explode(' ', $words[1], 2);
-            if(isset($version)) return $version[0];
+        if(str_contains(php_sapi_name(),"apache"))
+        {
+            $words = explode('/', apache_get_version(), 2);
+            if(isset($words))
+                $version = explode(' ', $words[1], 2);
+                if(isset($version)) return $version[0];
+        }
         return "---";
         
     }

@@ -1,4 +1,4 @@
-@extends('soccertables.layouts.sidebar')
+@extends('soccertables.layouts.default')
 
 @section('favicon')
 <link rel="shortcut icon" href="{{URL::to('images/soccertables.ico')}}" type="image/x-icon" /> 
@@ -17,13 +17,12 @@
 
 
 @section('left-sidebar')
+    <br><br>
     <div>
         <a href="{{URL::to('/')}}">
-            <div>
-                <h1>
+            <div style="text-align:center">
                 <img src="{{URL::to('/images/soccerball.png')}}" alt="Soccer Tables" 
-                    style="width:64px;height:64px;margin-right:18px">Soccer Tables
-                </h1>
+                    style="width:128px;height:128px;"/>
             </div>
         </a>
     </div>
@@ -64,11 +63,17 @@
 
 
 @section('content')
-    <div style="width:560px;text-align:center;">
-        <br>
-        <h2>{{ $leagueseason->league_name }}</h3>
-    </div>
-	<table style="width:560px">
+    <div><br></div>
+	<table style="table-layout:fixed">
+        <th>
+            <tr>
+                <td style="width:1px"></td>
+                <td style="text-align:center">
+                    <h2>{{ $leagueseason->league_name }}</h2>
+                </td>
+                <td style="width:1px"></td>
+            </tr>
+        </th>
 		<tr>
 			<td style="width:80px">
 				<a href="{{URL::to('/matches'.'/'.$leagueseason->id.'/'.$dates['prev'])}}" 

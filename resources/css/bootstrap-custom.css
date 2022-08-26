@@ -1,40 +1,7 @@
 /*!
  * Bootstrap customised theme
- * Copyright 2014 Robert Smith
+ * Copyright 2022 Robert Smith
  */
-.navbar-custom {
-    background-color:#229922;
-    color:#ffffff;
-    border-radius:1;
-}
-
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
-}
-
-.navbar-custom .navbar-i > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    background-color:transparent;
-}
-
-.navbar-custom .navbar-brand {
-    color:#eeeeee;
-}
-
-div.navbar div.navbar-inner ul.nav a:hover {
-	background-color: lightgreen;
-    color: black; 
-}
-
-.colr {
-	text-align: right;
-}
-
-.nav-custom a {
-	color: navy;
-}
-
-
 
 .table-no-border>thead>tr>th, 
 .table-no-border>tbody>tr>th, 

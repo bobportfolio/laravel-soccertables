@@ -1,4 +1,4 @@
-<p align="center"><a href="https://ebob.uk" target="_blank">ebob.uk</a></p>
+<img src="https://github.com/ebob-robert/laravel-soccertables/blob/main/public/images/soccerball.png" alt="soccertables"/>
 
 ## About laravel-soccertables
 
